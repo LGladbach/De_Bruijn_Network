@@ -4,7 +4,7 @@ from src.package.package import Package
 
 
 class IntroducePackage(Package):
-    def __init__(self, rl:bool):
+    def __init__(self, rl:bool) -> None:
         self.rl = rl
         super().__init__("introduce", json.dumps({"rl": self.rl}))
 

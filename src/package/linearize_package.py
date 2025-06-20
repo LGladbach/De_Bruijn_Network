@@ -4,7 +4,7 @@ from src.package.package import Package
 
 
 class LinearizePackage(Package):
-    def __init__(self, address:tuple[str, int], position:float):
+    def __init__(self, address:tuple[str, int], position:float) -> None:
         self.address = address[0]
         self.port = address[1]
         self.position = position
